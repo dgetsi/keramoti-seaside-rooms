@@ -6,7 +6,7 @@
 <title>Keramoti Seaside Rooms | Δωμάτια Κεραμωτής — Κεραμωτή, Ελλάδα</title>
 <meta name="description" content="Keramoti Seaside Rooms / Δωμάτια Κεραμωτής — placeholder landing page for a sample guesthouse in Keramoti, Greece. Δείγμα σελίδας, όχι πραγματικές κρατήσεις.">
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#1F6F72">
+<meta name="theme-color" content="#12676B">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
@@ -25,6 +25,8 @@
   <span lang="el">Δείγμα ιστοσελίδας. Το κατάλυμα είναι φανταστικό· δεν γίνονται κρατήσεις.</span>
   <span lang="en">Placeholder property. Not a live booking site — no real rates, rooms or contact details.</span>
 </div>
+
+<div class="nav__scrim" id="navScrim"></div>
 
 <!-- ============ 1. STICKY NAV ============ -->
 <header class="nav" id="nav">
@@ -123,7 +125,7 @@
           <h3><span lang="el">Το κατάλυμα (ενδεικτικό)</span><span lang="en">The guesthouse (placeholder)</span></h3>
           <p lang="el">Τα «Δωμάτια Κεραμωτής» παρουσιάζονται εδώ ως <strong>φανταστικό παράδειγμα</strong> ενός μικρού οικογενειακού καταλύματος λίγα λεπτά με τα πόδια από την παραλία και το λιμάνι. Κάθε περιγραφή, αριθμός δωματίων και παροχή σε αυτή τη σελίδα είναι δείγμα κειμένου για σχεδιαστική χρήση — δεν έχει επαληθευτεί και δεν αντιστοιχεί σε υπαρκτή επιχείρηση.</p>
           <p lang="en">“Keramoti Seaside Rooms” appears here as a <strong>fictional example</strong> of a small family-run guesthouse a short walk from the beach and the harbour. Every description, room count and facility on this page is sample copy for design purposes — none of it is verified and it does not describe a real business.</p>
-          <p class="muted"><span lang="el">Δεν εμφανίζονται φωτογραφίες εσωτερικών χώρων: όλες οι εικόνες δείχνουν το χωριό.</span><span lang="en">No interior photos are shown — every image on this page is of the village itself.</span></p>
+          <p class="muted"><span lang="el">Οι φωτογραφίες εσωτερικών χώρων είναι <strong>δείγματα από ελεύθερο απόθεμα (Pexels)</strong> και επισημαίνονται ως τέτοια — δεν δείχνουν αυτό το κατάλυμα. Οι φωτογραφίες του χωριού είναι πραγματικές, από τα Wikimedia Commons.</span><span lang="en">The interior photos are <strong>labelled stock samples (Pexels)</strong> — they do not show this property. The village photographs are real, from Wikimedia Commons.</span></p>
         </div>
       </div>
     </div>
@@ -142,40 +144,110 @@
 
     <div class="grid grid--3">
       <article class="room">
-        <p class="tag tag--sample">SAMPLE · ΔΕΙΓΜΑ</p>
-        <h3><span lang="el">Δίκλινο «Αμμόγλωσσα»</span><span lang="en">Double — “Ammoglossa”</span></h3>
-        <p lang="el">Ενδεικτική περιγραφή: δίκλινο δωμάτιο με μικρό μπαλκόνι, σε παραδειγματική διαρρύθμιση.</p>
-        <p lang="en">Placeholder description: a double room with a small balcony, shown as an example layout.</p>
-        <ul class="room__list">
-          <li><span lang="el">2 άτομα (δείγμα)</span><span lang="en">2 guests (sample)</span></li>
-          <li><span lang="el">Μπαλκόνι (δείγμα)</span><span lang="en">Balcony (sample)</span></li>
-        </ul>
-        <p class="room__price"><span lang="el">Τιμή: μη διαθέσιμη — σελίδα-δείγμα</span><span lang="en">Rate: not available — sample page</span></p>
+        <figure class="room__media">
+          <img src="images/rooms/sample-room-ammoglossa.jpg" alt="Φωτογραφία-δείγμα: φωτεινό δωμάτιο με λευκούς τοίχους και μπαλκόνι με θέα στη θάλασσα / Sample stock photo: a bright white-walled room with a balcony overlooking the sea"
+               width="1600" height="2133" loading="lazy" decoding="async">
+          <p class="room__badge"><span lang="el">Δείγμα</span><span lang="en">Sample</span></p>
+        </figure>
+        <p class="room__caption">
+          <span lang="el">Ενδεικτική φωτογραφία από ελεύθερο απόθεμα — δεν απεικονίζει αυτόν τον ξενώνα.</span>
+          <span lang="en">Stock placeholder, not this guesthouse.</span>
+          <a href="https://www.pexels.com/photo/living-room-at-the-sea-14746022/" rel="noopener">Rosie C · Pexels</a>
+        </p>
+        <div class="room__body">
+          <p class="tag tag--sample">SAMPLE · ΔΕΙΓΜΑ</p>
+          <h3><span lang="el">Δίκλινο «Αμμόγλωσσα»</span><span lang="en">Double — “Ammoglossa”</span></h3>
+          <p lang="el">Ενδεικτική περιγραφή: δίκλινο δωμάτιο με μικρό μπαλκόνι, σε παραδειγματική διαρρύθμιση.</p>
+          <p lang="en">Placeholder description: a double room with a small balcony, shown as an example layout.</p>
+          <ul class="room__list">
+            <li><span lang="el">2 άτομα (δείγμα)</span><span lang="en">2 guests (sample)</span></li>
+            <li><span lang="el">Μπαλκόνι (δείγμα)</span><span lang="en">Balcony (sample)</span></li>
+          </ul>
+          <p class="room__price"><span lang="el">Τιμή: μη διαθέσιμη — σελίδα-δείγμα</span><span lang="en">Rate: not available — sample page</span></p>
+        </div>
       </article>
 
       <article class="room">
-        <p class="tag tag--sample">SAMPLE · ΔΕΙΓΜΑ</p>
-        <h3><span lang="el">Τρίκλινο «Νέστος»</span><span lang="en">Triple — “Nestos”</span></h3>
-        <p lang="el">Ενδεικτική περιγραφή: τρίκλινο δωμάτιο για μικρή οικογένεια ή παρέα, ως παράδειγμα.</p>
-        <p lang="en">Placeholder description: a triple room for a small family or group, given as an example.</p>
-        <ul class="room__list">
-          <li><span lang="el">3 άτομα (δείγμα)</span><span lang="en">3 guests (sample)</span></li>
-          <li><span lang="el">Καθιστικό (δείγμα)</span><span lang="en">Seating area (sample)</span></li>
-        </ul>
-        <p class="room__price"><span lang="el">Τιμή: μη διαθέσιμη — σελίδα-δείγμα</span><span lang="en">Rate: not available — sample page</span></p>
+        <figure class="room__media">
+          <img src="images/rooms/sample-room-nestos.jpg" alt="Φωτογραφία-δείγμα: φωτεινό δωμάτιο ξενοδοχείου με διπλό κρεβάτι, καθιστικό και μπαλκονόπορτα / Sample stock photo: a bright hotel room with a double bed, a seating area and a balcony door"
+               width="1600" height="1068" loading="lazy" decoding="async">
+          <p class="room__badge"><span lang="el">Δείγμα</span><span lang="en">Sample</span></p>
+        </figure>
+        <p class="room__caption">
+          <span lang="el">Ενδεικτική φωτογραφία από ελεύθερο απόθεμα — δεν απεικονίζει αυτόν τον ξενώνα.</span>
+          <span lang="en">Stock placeholder, not this guesthouse.</span>
+          <a href="https://www.pexels.com/photo/person-showing-bedroom-interior-237371/" rel="noopener">Pixabay · Pexels</a>
+        </p>
+        <div class="room__body">
+          <p class="tag tag--sample">SAMPLE · ΔΕΙΓΜΑ</p>
+          <h3><span lang="el">Τρίκλινο «Νέστος»</span><span lang="en">Triple — “Nestos”</span></h3>
+          <p lang="el">Ενδεικτική περιγραφή: τρίκλινο δωμάτιο για μικρή οικογένεια ή παρέα, ως παράδειγμα.</p>
+          <p lang="en">Placeholder description: a triple room for a small family or group, given as an example.</p>
+          <ul class="room__list">
+            <li><span lang="el">3 άτομα (δείγμα)</span><span lang="en">3 guests (sample)</span></li>
+            <li><span lang="el">Καθιστικό (δείγμα)</span><span lang="en">Seating area (sample)</span></li>
+          </ul>
+          <p class="room__price"><span lang="el">Τιμή: μη διαθέσιμη — σελίδα-δείγμα</span><span lang="en">Rate: not available — sample page</span></p>
+        </div>
       </article>
 
       <article class="room">
-        <p class="tag tag--sample">SAMPLE · ΔΕΙΓΜΑ</p>
-        <h3><span lang="el">Στούντιο «Θάσος»</span><span lang="en">Studio — “Thassos”</span></h3>
-        <p lang="el">Ενδεικτική περιγραφή: στούντιο με μικρή κουζίνα, για παραμονή μερικών ημερών. Παράδειγμα μόνο.</p>
-        <p lang="en">Placeholder description: a studio with a kitchenette for a stay of a few days. Example only.</p>
-        <ul class="room__list">
-          <li><span lang="el">2–3 άτομα (δείγμα)</span><span lang="en">2–3 guests (sample)</span></li>
-          <li><span lang="el">Κουζινάκι (δείγμα)</span><span lang="en">Kitchenette (sample)</span></li>
-        </ul>
-        <p class="room__price"><span lang="el">Τιμή: μη διαθέσιμη — σελίδα-δείγμα</span><span lang="en">Rate: not available — sample page</span></p>
+        <figure class="room__media">
+          <img src="images/rooms/sample-room-thassos.jpg" alt="Φωτογραφία-δείγμα: φωτεινός ενιαίος χώρος με πολυθρόνα, χαλί και ψηλά παράθυρα / Sample stock photo: a bright open-plan space with an armchair, a rug and tall windows"
+               width="1600" height="2400" loading="lazy" decoding="async">
+          <p class="room__badge"><span lang="el">Δείγμα</span><span lang="en">Sample</span></p>
+        </figure>
+        <p class="room__caption">
+          <span lang="el">Ενδεικτική φωτογραφία από ελεύθερο απόθεμα — δεν απεικονίζει αυτόν τον ξενώνα.</span>
+          <span lang="en">Stock placeholder, not this guesthouse.</span>
+          <a href="https://www.pexels.com/photo/armchair-and-carpet-in-room-15743373/" rel="noopener">Ushindi Namegabe · Pexels</a>
+        </p>
+        <div class="room__body">
+          <p class="tag tag--sample">SAMPLE · ΔΕΙΓΜΑ</p>
+          <h3><span lang="el">Στούντιο «Θάσος»</span><span lang="en">Studio — “Thassos”</span></h3>
+          <p lang="el">Ενδεικτική περιγραφή: στούντιο με μικρή κουζίνα, για παραμονή μερικών ημερών. Παράδειγμα μόνο.</p>
+          <p lang="en">Placeholder description: a studio with a kitchenette for a stay of a few days. Example only.</p>
+          <ul class="room__list">
+            <li><span lang="el">2–3 άτομα (δείγμα)</span><span lang="en">2–3 guests (sample)</span></li>
+            <li><span lang="el">Κουζινάκι (δείγμα)</span><span lang="en">Kitchenette (sample)</span></li>
+          </ul>
+          <p class="room__price"><span lang="el">Τιμή: μη διαθέσιμη — σελίδα-δείγμα</span><span lang="en">Rate: not available — sample page</span></p>
+        </div>
       </article>
+    </div>
+
+    <h3 class="stock-strip__head"><span lang="el">Περισσότερα δείγματα εσωτερικών χώρων</span><span lang="en">More sample interiors</span></h3>
+    <div class="stock-strip">
+      <figure>
+        <img src="images/rooms/sample-seaview.jpg" alt="Φωτογραφία-δείγμα: κρεβάτι με λευκά σεντόνια σε δωμάτιο με θέα στη θάλασσα / Sample stock photo: a bed with white linen in a room facing the sea"
+             width="1600" height="1067" loading="lazy" decoding="async">
+        <p class="room__badge"><span lang="el">Δείγμα</span><span lang="en">Sample</span></p>
+        <figcaption>
+          <span lang="el">Ενδεικτική φωτογραφία από ελεύθερο απόθεμα — δεν απεικονίζει αυτόν τον ξενώνα.</span>
+          <span lang="en">Stock placeholder, not this guesthouse.</span>
+          <a href="https://www.pexels.com/photo/white-bed-linen-near-brown-wooden-bed-frame-12652920/" rel="noopener">iam luisao · Pexels</a>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="images/rooms/sample-bed.jpg" alt="Φωτογραφία-δείγμα: λευκά μαξιλάρια και επιτραπέζιο φωτιστικό δίπλα σε κρεβάτι / Sample stock photo: white pillows and a table lamp beside a bed"
+             width="1600" height="2031" loading="lazy" decoding="async">
+        <p class="room__badge"><span lang="el">Δείγμα</span><span lang="en">Sample</span></p>
+        <figcaption>
+          <span lang="el">Ενδεικτική φωτογραφία από ελεύθερο απόθεμα — δεν απεικονίζει αυτόν τον ξενώνα.</span>
+          <span lang="en">Stock placeholder, not this guesthouse.</span>
+          <a href="https://www.pexels.com/photo/silver-and-white-desk-lamp-beside-bed-279805/" rel="noopener">Pixabay · Pexels</a>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="images/rooms/sample-balcony.jpg" alt="Φωτογραφία-δείγμα: μπαλκονόπορτα δωματίου με θέα στη θάλασσα / Sample stock photo: a room's balcony door with a sea view"
+             width="1600" height="2845" loading="lazy" decoding="async">
+        <p class="room__badge"><span lang="el">Δείγμα</span><span lang="en">Sample</span></p>
+        <figcaption>
+          <span lang="el">Ενδεικτική φωτογραφία από ελεύθερο απόθεμα — δεν απεικονίζει αυτόν τον ξενώνα.</span>
+          <span lang="en">Stock placeholder, not this guesthouse.</span>
+          <a href="https://www.pexels.com/photo/a-glass-door-with-sea-view-13595886/" rel="noopener">Tanya Kash · Pexels</a>
+        </figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -330,6 +402,18 @@
           <li><a href="https://commons.wikimedia.org/wiki/File:Keramoti-quay-street.jpg" rel="noopener">Keramoti quay street</a> — Edal Anton Lefterov, CC BY-SA 3.0</li>
           <li><a href="https://commons.wikimedia.org/wiki/File:Flickr_-_ronsaunders47_-_Setting_sail_from_Keramouti_towards_Thassos_Town..jpg" rel="noopener">Setting sail towards Thassos</a> — Ronald Saunders, CC BY-SA 2.0</li>
         </ul>
+        <ul class="credits credits--stock">
+          <li><a href="https://www.pexels.com/photo/living-room-at-the-sea-14746022/" rel="noopener">Sample room — Ammoglossa</a> — Rosie C, Pexels License (generic stock)</li>
+          <li><a href="https://www.pexels.com/photo/person-showing-bedroom-interior-237371/" rel="noopener">Sample room — Nestos</a> — Pixabay, Pexels License (generic stock)</li>
+          <li><a href="https://www.pexels.com/photo/armchair-and-carpet-in-room-15743373/" rel="noopener">Sample room — Thassos</a> — Ushindi Namegabe, Pexels License (generic stock)</li>
+          <li><a href="https://www.pexels.com/photo/white-bed-linen-near-brown-wooden-bed-frame-12652920/" rel="noopener">Sample sea-view room</a> — iam luisao, Pexels License (generic stock)</li>
+          <li><a href="https://www.pexels.com/photo/silver-and-white-desk-lamp-beside-bed-279805/" rel="noopener">Sample bedside detail</a> — Pixabay, Pexels License (generic stock)</li>
+          <li><a href="https://www.pexels.com/photo/a-glass-door-with-sea-view-13595886/" rel="noopener">Sample balcony door</a> — Tanya Kash, Pexels License (generic stock)</li>
+        </ul>
+        <p class="muted small">
+          <span lang="el">Οι εικόνες εσωτερικών χώρων είναι γενικές φωτογραφίες αποθέματος και δεν απεικονίζουν αυτό το κατάλυμα.</span>
+          <span lang="en">The interior images are generic stock photographs and do not show this property.</span>
+        </p>
         <p class="small">
           <a href="CREDITS.md"><span lang="el">Πλήρη credits — CREDITS.md</span><span lang="en">Full credits — CREDITS.md</span></a>
         </p>

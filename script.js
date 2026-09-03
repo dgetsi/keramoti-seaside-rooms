@@ -5,20 +5,26 @@
 
   var root = document.documentElement;
 
-  /* ---- Mobile nav ---- */
+  /* ---- Mobile nav (slide-in panel) ---- */
   var toggle = document.getElementById('navToggle');
   var menu = document.getElementById('navMenu');
+  var scrim = document.getElementById('navScrim');
 
-  function closeMenu() {
-    menu.classList.remove('is-open');
-    toggle.setAttribute('aria-expanded', 'false');
+  function setMenu(open) {
+    menu.classList.toggle('is-open', open);
+    if (scrim) scrim.classList.toggle('is-open', open);
+    document.body.classList.toggle('has-open-nav', open);
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
   }
+
+  function closeMenu() { setMenu(false); }
 
   if (toggle && menu) {
     toggle.addEventListener('click', function () {
-      var open = menu.classList.toggle('is-open');
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      setMenu(!menu.classList.contains('is-open'));
     });
+
+    if (scrim) scrim.addEventListener('click', closeMenu);
 
     // Close after tapping a link on small screens.
     menu.addEventListener('click', function (e) {
@@ -31,6 +37,21 @@
         toggle.focus();
       }
     });
+
+    // Keep focus inside the panel while it is open.
+    document.addEventListener('focusin', function (e) {
+      if (!menu.classList.contains('is-open')) return;
+      if (menu.contains(e.target) || toggle.contains(e.target)) return;
+      menu.querySelector('a, button').focus();
+    });
+
+    // Reset when the layout returns to the desktop bar.
+    if (window.matchMedia) {
+      var wide = window.matchMedia('(min-width: 60.0625rem)');
+      var onChange = function (e) { if (e.matches) closeMenu(); };
+      if (wide.addEventListener) wide.addEventListener('change', onChange);
+      else if (wide.addListener) wide.addListener(onChange);
+    }
   }
 
   /* ---- Language switch (ΕΛ / EN / both) ---- */
