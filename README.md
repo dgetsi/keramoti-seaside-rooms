@@ -1,13 +1,16 @@
-# Keramoti Seaside Rooms
+# Keramoti Seaside Rooms / Δωμάτια Κεραμωτής
 
-Placeholder landing page for a small guesthouse in Keramoti, Kavala, Greece.
-Name can be renamed later. Rooms, amenities and contact are sample copy.
+Placeholder bilingual (Greek + English) landing page for a sample guesthouse in Keramoti (Κεραμωτή), Kavala, Greece. This is not a live booking site and does not describe a verified business.
 
-## Open the page
+Rooms, amenities, contact details, and prices on the page are placeholders. No interior photos are shown; the four images are of the village and harbour.
 
-Download or clone this repo, then open `index.html` in a browser (or `python3 -m http.server` in this folder).
-Needs `index.html`, `styles.css`, `script.js`, and the `images/` folder together.
+## Open locally
 
-## Photos
+This repo is private. There is no public GitHub Pages URL unless the owner enables it.
 
-Local Wikimedia Commons files. Attribution is in CREDITS.md and the page footer. Licenses are share-alike; keep the credits.
+Clone or download the ZIP, then open the landing page in a browser. No build step.
+Keep index.html, styles.css, script.js, and the images folder together.
+
+## Photo credits (share-alike)
+
+Local Wikimedia Commons JPEGs, not hotlinked. Authors, licenses, and source URLs are in CREDITS.md and the page footer. Do not strip attribution. Share-alike licenses apply.
