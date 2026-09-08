@@ -848,6 +848,43 @@ html[data-lang="both"] .amenities li [lang="en"] { color: #A9C9C7; font-size: .8
   font-size: .9em;
 }
 
+.owner-slot-hint { margin: 0 0 1rem; }
+.enquire-slots {
+  margin: 0 0 1.4rem;
+  text-align: left;
+  display: grid;
+  gap: 1rem;
+}
+.enquire-slot {
+  margin: 0;
+  padding: .85rem 1rem;
+  background: var(--sand);
+  border: 1px dashed var(--sand-line);
+  border-radius: var(--radius-sm);
+}
+.enquire-slot dt {
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 0 0 .35rem;
+}
+.enquire-slot dd { margin: 0; }
+.enquire-slot__value {
+  margin: 0;
+  font-family: var(--display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+.contact-card__cta-wrap { margin: 1.2rem 0 .8rem; }
+.enquire-sample-email { font: inherit; }
+.enquire-control:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+}
+
 
 /* ---------- Footer ---------- */
 .footer {

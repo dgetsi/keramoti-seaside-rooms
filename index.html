@@ -97,6 +97,7 @@
     <div class="hero__cta">
       <a class="btn btn--primary" href="#rooms"><span lang="el">Δείτε τα δωμάτια</span><span lang="en">See sample rooms</span></a>
       <a class="btn btn--ghost" href="#location"><span lang="el">Πού βρισκόμαστε</span><span lang="en">Where we are</span></a>
+      <a class="btn btn--ghost" href="#contact"><span lang="el">Ενδεικτική επικοινωνία</span><span lang="en">Sample enquire</span></a>
     </div>
     <ul class="hero__facts">
       <li><b>~40 km</b> <span lang="el">ανατολικά της Καβάλας</span><span lang="en">east of Kavala</span></li>
@@ -349,27 +350,80 @@
 </section>
 
 <!-- ============ 7. CONTACT ============ -->
+<!-- OWNER: replace enquire placeholders below with verified email / phone / hours; see OWNER_DOD.md -->
 <section class="section section--contact" id="contact">
   <div class="wrap wrap--narrow">
     <p class="eyebrow"><span lang="el">Επικοινωνία</span><span lang="en">Contact</span></p>
     <h2><span lang="el">Ρωτήστε μας — ενδεικτικά στοιχεία</span><span lang="en">Get in touch — sample details</span></h2>
     <p>
-      <span lang="el">Σε μια πραγματική σελίδα εδώ θα υπήρχε φόρμα ή στοιχεία επικοινωνίας του καταλύματος. Σε αυτό το δείγμα υπάρχει μόνο μια εικονική διεύθυνση email.</span>
-      <span lang="en">On a real site this is where an enquiry form or the property’s contact details would sit. On this placeholder there is only a dummy email address.</span>
+      <span lang="el">Αυτό δεν είναι inbox καταλύματος. Τα πεδία παρακάτω είναι <strong>σύμβολα προς συμπλήρωση από τον ιδιοκτήτη</strong> — όχι φόρμα αποστολής και όχι ισχυρισμός ότι παραλαμβάνονται μηνύματα.</span>
+      <span lang="en">This is not a property inbox. The fields below are <strong>owner fill slots</strong> — not a submitting form, and not a claim that messages are received.</span>
+    </p>
+    <p class="section__note">
+      <span lang="el"><strong>Επόμενο βήμα επισκέπτη:</strong> διαβάστε τα ενδεικτικά πεδία παρακάτω. <strong>Δεν υπάρχει ζωντανό inbox</strong> σε αυτή τη σελίδα-δείγμα — μην περιμένετε απάντηση. Όταν ο ιδιοκτήτης ορίσει πραγματική διεύθυνση (βλ. OWNER_DOD.md), τότε μόνο έχει νόημα mailto.</span>
+      <span lang="en"><strong>Visitor next step:</strong> read the labelled placeholder slots below. <strong>There is no live inbox</strong> on this sample page — do not expect a reply. Only after the owner sets a real address (see OWNER_DOD.md) does mailto become meaningful.</span>
     </p>
 
     <div class="contact-card">
       <p class="tag tag--sample">SAMPLE CONTACT · ΕΝΔΕΙΚΤΙΚΑ ΣΤΟΙΧΕΙΑ</p>
-      <p class="contact-card__email"><a href="mailto:hello@example.com">hello@example.com</a></p>
-      <p class="muted">
-        <span lang="el">Εικονική διεύθυνση (<code>example.com</code>). Δεν παραλαμβάνεται κανένα μήνυμα. Δεν παρατίθεται τηλέφωνο, γιατί δεν υπάρχει πραγματικός αριθμός.</span>
-        <span lang="en">Dummy address (<code>example.com</code>). Nothing sent here is received. No phone number is listed, because there is no real one.</span>
+      <p class="muted small owner-slot-hint">
+        <span lang="el">Πεδία ιδιοκτήτη (μόνο εμφάνιση) · Owner fill slots (display only)</span>
+      </p>
+
+      <dl class="enquire-slots">
+        <!-- OWNER: replace — email -->
+        <div class="enquire-slot">
+          <dt><span lang="el">Email (σύμβολο)</span><span lang="en">Email (placeholder)</span></dt>
+          <dd id="enquireSlots">
+            <p class="contact-card__email"><span class="enquire-sample-email" aria-label="Sample email placeholder">hello@example.com</span></p>
+            <p class="muted small">
+              <span lang="el">Εικονική διεύθυνση (<code>example.com</code>) — <strong>όχι πραγματικό inbox</strong>. Δεν παραλαμβάνεται κανένα μήνυμα. Δεν χρησιμοποιείται πραγματικό mailto.</span>
+              <span lang="en">Dummy address (<code>example.com</code>) — <strong>not a real inbox</strong>. Nothing sent here is received. No live mailto is offered.</span>
+            </p>
+          </dd>
+        </div>
+        <!-- OWNER: replace — phone (only when verified; do not invent) -->
+        <div class="enquire-slot">
+          <dt><span lang="el">Τηλέφωνο (σύμβολο)</span><span lang="en">Phone (placeholder)</span></dt>
+          <dd>
+            <p class="enquire-slot__value" aria-label="Phone placeholder / Σύμβολο τηλεφώνου">
+              <span lang="el">Δεν παρατίθεται αριθμός — συμπληρώνεται μόνο αν επαληθευτεί</span>
+              <span lang="en">No number listed — fill only when verified</span>
+            </p>
+          </dd>
+        </div>
+        <!-- OWNER: replace — preferred reply hours -->
+        <div class="enquire-slot">
+          <dt><span lang="el">Ώρες απάντησης (σύμβολο)</span><span lang="en">Preferred reply hours (placeholder)</span></dt>
+          <dd>
+            <p class="enquire-slot__value">
+              <span lang="el">π.χ. καθημερινές 09:00–17:00 (τοπική ώρα) — προς συμπλήρωση</span>
+              <span lang="en">e.g. weekdays 09:00–17:00 (local time) — to be filled by owner</span>
+            </p>
+          </dd>
+        </div>
+      </dl>
+
+      <p class="contact-card__cta-wrap">
+        <a id="enquireControl" class="btn btn--primary enquire-control" href="#enquireSlots">
+          <span lang="el">Δείτε τα ενδεικτικά στοιχεία</span>
+          <span lang="en">Review sample enquire slots</span>
+        </a>
+      </p>
+      <p class="muted small">
+        <span lang="el">Εστιαζόμενο κουμπί πλοήγησης στα σύμβολα επικοινωνίας — <strong>χωρίς αποστολή</strong>, χωρίς «εστάλη», χωρίς πραγματικό inbox.</span>
+        <span lang="en">Focusable control jumps to the contact placeholders — <strong>no send</strong>, no “message sent”, no live inbox.</span>
       </p>
     </div>
 
     <p class="muted small">
-      <span lang="el">Καμία κράτηση, πληρωμή ή διαθεσιμότητα δεν είναι δυνατή μέσω αυτής της σελίδας.</span>
-      <span lang="en">No booking, payment or availability check is possible through this page.</span>
+      <span lang="el">Καμία κράτηση, πληρωμή ή διαθεσιμότητα δεν είναι δυνατή μέσω αυτής της σελίδας. Δεν συλλέγονται προσωπικά δεδομένα από φόρμα.</span>
+      <span lang="en">No booking, payment or availability check is possible through this page. No PII is collected via a form.</span>
+    </p>
+    <p class="small dod-teaser">
+      <span lang="el"><strong>Για τον ιδιοκτήτη:</strong> λίστα ελέγχου πριν από πραγματικές φωτογραφίες/τιμές — </span>
+      <span lang="en"><strong>For the owner:</strong> checklist before real photos/prices — </span>
+      <a href="OWNER_DOD.md">OWNER_DOD.md</a>
     </p>
   </div>
 </section>
@@ -416,6 +470,8 @@
         </p>
         <p class="small">
           <a href="CREDITS.md"><span lang="el">Πλήρη credits — CREDITS.md</span><span lang="en">Full credits — CREDITS.md</span></a>
+          ·
+          <a href="OWNER_DOD.md"><span lang="el">DoD ιδιοκτήτη — OWNER_DOD.md</span><span lang="en">Owner DoD — OWNER_DOD.md</span></a>
         </p>
         <p class="muted small">
           <span lang="el">Εικόνες από τα Wikimedia Commons με άδειες Creative Commons share-alike. Χάρτης: © OpenStreetMap contributors.</span>
