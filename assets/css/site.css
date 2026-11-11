@@ -107,6 +107,7 @@ body{padding-bottom:84px}
   .hero{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:0;max-width:var(--max);margin:0 auto;padding:24px var(--gut) 40px;align-items:center}
   .hero-copy{position:static;color:var(--ink);padding:0 48px 0 0;order:0}
   .hero .kicker{color:var(--terra)}
+  .hero h1{font-size:clamp(2.4rem,calc(7.8vw - 14px),5.1rem)}
   .hero .tagline{color:var(--ink-2);font-size:1.3rem}
   .hero-media{height:640px;min-height:0;border-radius:28px 28px 28px 120px;order:1}
   .hero-media::after{display:none}
