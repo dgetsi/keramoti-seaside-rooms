@@ -94,6 +94,8 @@ AM = {  # icon id, EL, EN
  "shower": ("shower","Μπάνιο με ντους","Shower"),
  "pines": ("pine","Θέα στα πεύκα","Pine-forest view"),
  "stone": ("home","Σαλόνι διπλού ύψους","Double-height living room"),
+ "bath2": ("shower","Δύο μπάνια","Two bathrooms"),
+ "dining": ("kitchen","Τραπεζαρία","Dining table"),
 }
 
 # NOTE: apartment names are working names drawn from the photos — confirm with Katerina.
@@ -116,18 +118,56 @@ APTS = [
    (6,"Υπνοδωμάτια","Bedrooms","Διπλό υπνοδωμάτιο και υπνοδωμάτιο σοφίτας.","A double bedroom and the loft bedroom."),
    (12,"Μπάνιο","Bathroom","Με ντους.","With shower.")],
   "og":"turquoise-loft.jpg"},
- {"slug":"stone-maisonette","el":"Μεζονέτα με πέτρα","en":"Stone-wall Maisonette","page":False,
+ {"slug":"stone-maisonette","el":"Μεζονέτα με πέτρα","en":"Stone-wall Maisonette","page":True,
   "teaser":("Σαλόνι διπλού ύψους με πέτρινο τοίχο, ζωγραφισμένη σκάλα και υπνοδωμάτια στη σοφίτα.",
             "A double-height living room with a stone wall, a painted staircase and loft bedrooms."),
-  "chips":["stone","loft","ac","shower"],"og":"stone-maisonette.jpg"},
- {"slug":"studio","el":"Στούντιο με θέα στα πεύκα","en":"Pine-view Studio","page":False,
+  "chips":["stone","loft","ac","shower"],
+  "amen":["stone","loft","ac","kitchen","dining","tv","double","single","bath2"],
+  "body":[
+   ("Μεζονέτα σε δύο επίπεδα, χτισμένη γύρω από ένα σαλόνι διπλού ύψους. Ο πέτρινος τοίχος ανεβαίνει ως τα ψηλά παράθυρα, μπροστά του ένας γωνιακός καναπές, τηλεόραση και κλιματισμός.",
+    "A maisonette on two levels, built around a double-height living room. The stone wall rises to the tall windows, with a corner sofa, a TV and air conditioning in front of it."),
+   ("Η κουζίνα έχει μπλε ντουλάπια και τραπεζαρία κάτω από τη σκάλα. Μια ανοιχτή σκάλα, δίπλα σε τοιχογραφία με ανθισμένα κλαδιά, ανεβαίνει στον όροφο: διπλό υπνοδωμάτιο, δωμάτιο σοφίτας με μονό κρεβάτι και βιβλιοθήκη, και δύο μπάνια, το ένα με μάρμαρο και ντους-βροχή.",
+    "The kitchen has blue cabinets and a dining table tucked under the stairs. An open-tread staircase, beside a mural of blossoming branches, climbs to the upper floor: a double bedroom, a loft room with a single bed and bookshelves, and two bathrooms, one in marble with a rain shower.")],
+  "spaces":[
+   (1,"Σαλόνι","Living room","Διπλού ύψους, πέτρινος τοίχος, γωνιακός καναπές, τηλεόραση.","Double height, stone wall, corner sofa, TV."),
+   (10,"Κουζίνα","Kitchen","Μπλε ντουλάπια, τραπεζαρία κάτω από τη σκάλα.","Blue cabinets, dining table under the stairs."),
+   (4,"Σκάλα","Staircase","Ανοιχτή σκάλα δίπλα στην τοιχογραφία.","Open-tread staircase beside the mural."),
+   (5,"Υπνοδωμάτια","Bedrooms","Διπλό υπνοδωμάτιο και δωμάτιο σοφίτας με μονό κρεβάτι.","A double bedroom and a loft room with a single bed."),
+   (8,"Μπάνια","Bathrooms","Δύο, το ένα με μάρμαρο και ντους-βροχή.","Two, one in marble with a rain shower.")],
+  "og":"stone-maisonette.jpg"},
+ {"slug":"studio","el":"Στούντιο με θέα στα πεύκα","en":"Pine-view Studio","page":True,
   "teaser":("Μονά κρεβάτια, κουζινούλα και μπαλκόνι που κοιτάζει κατευθείαν στα πεύκα.",
             "Single beds, a kitchenette and a balcony that looks straight into the pines."),
-  "chips":["single","kitchenette","balcony","pines"],"og":"studio.jpg"},
- {"slug":"green","el":"Πράσινο διαμέρισμα","en":"Green Apartment","page":False,
+  "chips":["single","kitchenette","balcony","pines"],
+  "amen":["pines","balcony","ac","kitchenette","dining","tv","single","double","shower"],
+  "body":[
+   ("Φωτεινό στούντιο με μπαλκονόπορτα σε μπαλκόνι που κοιτάζει κατευθείαν στο πευκοδάσος. Στον κυρίως χώρο υπάρχουν μονά σιδερένια κρεβάτια, τραπεζαρία και τηλεόραση, και μια κουζινούλα με εστίες και νεροχύτη.",
+    "A bright studio whose glass door opens onto a balcony looking straight into the pine forest. The main room has iron-frame single beds, a dining table and a TV, plus a kitchenette with a hob and sink."),
+   ("Υπάρχει επίσης διπλό κρεβάτι με κομοδίνο και πορτατίφ, ντουλάπα και κλιματισμός, και μπάνιο με ντους.",
+    "There is also a double bed with a bedside table and lamp, a wardrobe and air conditioning, and a bathroom with a shower.")],
+  "spaces":[
+   (2,"Κυρίως χώρος","Main room","Μονά κρεβάτια, τραπεζαρία, τηλεόραση.","Single beds, dining table, TV."),
+   (5,"Μπαλκόνι","Balcony","Με θέα στο πευκοδάσος.","Looking out over the pine forest."),
+   (8,"Κουζινούλα","Kitchenette","Εστίες και νεροχύτης.","Hob and sink."),
+   (6,"Διπλό κρεβάτι","Double bed","Με κομοδίνο, πορτατίφ και κλιματισμό.","With bedside table, lamp and air conditioning."),
+   (10,"Μπάνιο","Bathroom","Με ντους.","With shower.")],
+  "og":"studio.jpg"},
+ {"slug":"green","el":"Πράσινο διαμέρισμα","en":"Green Apartment","page":True,
   "teaser":("Κουζίνα-σαλόνι με πράσινους τοίχους και καμάρα, και ξεχωριστό διπλό υπνοδωμάτιο.",
             "A green-walled kitchen and living room under an arch, with a separate double bedroom."),
-  "chips":["kitchen","double","ac","tv"],"og":"green.jpg"},
+  "chips":["kitchen","double","ac","tv"],
+  "amen":["kitchen","dining","ac","tv","double"],
+  "body":[
+   ("Διαμέρισμα με πράσινους τοίχους και ανοιχτή κουζίνα-σαλόνι. Η κουζίνα έχει λευκά ντουλάπια, φούρνο, απορροφητήρα και ψυγείο, και δίπλα της τραπεζαρία, καναπές, τηλεόραση και κλιματισμός.",
+    "An apartment with green walls and an open kitchen and living room. The kitchen has white cabinets, an oven, a hood and a fridge, with a dining table, sofa, TV and air conditioning beside it."),
+   ("Μια καμάρα οδηγεί στον διάδρομο, στο μπάνιο και στο ξεχωριστό διπλό υπνοδωμάτιο με κομοδίνα, τουαλέτα με καθρέφτη και ντουλάπα.",
+    "An archway leads to the hallway, the bathroom and the separate double bedroom, with bedside tables, a dressing table with mirror and a wardrobe.")],
+  "spaces":[
+   (1,"Κουζίνα","Kitchen","Λευκά ντουλάπια, φούρνος, απορροφητήρας, ψυγείο.","White cabinets, oven, hood, fridge."),
+   (2,"Σαλόνι-τραπεζαρία","Living & dining","Καναπές, τηλεόραση, κλιματισμός.","Sofa, TV, air conditioning."),
+   (5,"Καμάρα & διάδρομος","Arch & hallway","Προς το μπάνιο και το υπνοδωμάτιο.","To the bathroom and bedroom."),
+   (7,"Υπνοδωμάτιο","Bedroom","Διπλό κρεβάτι, τουαλέτα με καθρέφτη, ντουλάπα.","Double bed, dressing table with mirror, wardrobe.")],
+  "og":"green.jpg"},
 ]
 
 # ── icons ─────────────────────────────────────────────────────────────────
